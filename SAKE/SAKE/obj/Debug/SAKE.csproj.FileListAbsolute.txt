@@ -1,0 +1,10 @@
+C:\Erken SPK 2020\Programs\SAKE\SAKE\bin\Debug\SAKE.exe.config
+C:\Erken SPK 2020\Programs\SAKE\SAKE\bin\Debug\SAKE.exe
+C:\Erken SPK 2020\Programs\SAKE\SAKE\bin\Debug\SAKE.pdb
+C:\Erken SPK 2020\Programs\SAKE\SAKE\obj\Debug\SAKE.csprojAssemblyReference.cache
+C:\Erken SPK 2020\Programs\SAKE\SAKE\obj\Debug\SAKE.Form1.resources
+C:\Erken SPK 2020\Programs\SAKE\SAKE\obj\Debug\SAKE.Properties.Resources.resources
+C:\Erken SPK 2020\Programs\SAKE\SAKE\obj\Debug\SAKE.csproj.GenerateResource.cache
+C:\Erken SPK 2020\Programs\SAKE\SAKE\obj\Debug\SAKE.csproj.CoreCompileInputs.cache
+C:\Erken SPK 2020\Programs\SAKE\SAKE\obj\Debug\SAKE.exe
+C:\Erken SPK 2020\Programs\SAKE\SAKE\obj\Debug\SAKE.pdb
