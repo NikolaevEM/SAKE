@@ -1,0 +1,42 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Абит;уеуе;еу;
+FN:Абит уеуе
+TEL;type=CELL;type=VOICE;waid=уеуеу:уеуеу
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+N:Абит;уеуе;еу;
+FN:Абит уеуе
+TEL;type=CELL;type=VOICE;waid=уеуеуе:уеуеуе
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+N:Абит;уееуе;уеуе;
+FN:Абит уееуе
+TEL;type=CELL;type=VOICE;waid=уе:уе
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+N:Абит;;уееу;
+FN:Абит 
+TEL;type=CELL;type=VOICE;waid=уе:уе
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+N:Абит;уееуеуе;уееу;
+FN:Абит уееуеуе
+TEL;type=CELL;type=VOICE;waid=еу:еу
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+N:Абит;уе;уе;
+FN:Абит уе
+TEL;type=CELL;type=VOICE;waid=уе:уе
+END:VCARD
+

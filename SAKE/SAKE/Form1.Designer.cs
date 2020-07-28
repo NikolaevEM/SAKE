@@ -28,89 +28,197 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.FIO = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Number = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Tag = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.textFIO1 = new System.Windows.Forms.RichTextBox();
+            this.buttonExport = new System.Windows.Forms.Button();
+            this.textNumber2 = new System.Windows.Forms.RichTextBox();
+            this.labelFIO1 = new System.Windows.Forms.Label();
+            this.labelNumber2 = new System.Windows.Forms.Label();
+            this.textTag3 = new System.Windows.Forms.TextBox();
+            this.labelTag3 = new System.Windows.Forms.Label();
+            this.labelError4 = new System.Windows.Forms.Label();
+            this.labelGroup4 = new System.Windows.Forms.Label();
+            this.textGroup4 = new System.Windows.Forms.RichTextBox();
+            this.labelCountFIO = new System.Windows.Forms.Label();
+            this.labelCountNumber = new System.Windows.Forms.Label();
+            this.labelCountGroup = new System.Windows.Forms.Label();
+            this.labelWarningUnderExport = new System.Windows.Forms.Label();
+            this.buttonInstruction = new System.Windows.Forms.Button();
+            this.buttonSuggestions = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // FIO
+            // textFIO1
             // 
-            this.FIO.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.FIO.Location = new System.Drawing.Point(12, 80);
-            this.FIO.Name = "FIO";
-            this.FIO.Size = new System.Drawing.Size(185, 358);
-            this.FIO.TabIndex = 1;
-            this.FIO.Text = "";
-            this.FIO.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.textFIO1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textFIO1.Location = new System.Drawing.Point(12, 107);
+            this.textFIO1.Name = "textFIO1";
+            this.textFIO1.Size = new System.Drawing.Size(185, 317);
+            this.textFIO1.TabIndex = 1;
+            this.textFIO1.Text = "";
+            this.textFIO1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
-            // button1
+            // buttonExport
             // 
-            this.button1.Location = new System.Drawing.Point(473, 372);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 66);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Экспортировать";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonExport.Location = new System.Drawing.Point(547, 359);
+            this.buttonExport.Name = "buttonExport";
+            this.buttonExport.Size = new System.Drawing.Size(180, 66);
+            this.buttonExport.TabIndex = 2;
+            this.buttonExport.Text = "Экспортировать";
+            this.buttonExport.UseVisualStyleBackColor = true;
+            this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
             // 
-            // Number
+            // textNumber2
             // 
-            this.Number.Location = new System.Drawing.Point(203, 80);
-            this.Number.Name = "Number";
-            this.Number.Size = new System.Drawing.Size(124, 358);
-            this.Number.TabIndex = 3;
-            this.Number.Text = "";
+            this.textNumber2.Location = new System.Drawing.Point(203, 107);
+            this.textNumber2.Name = "textNumber2";
+            this.textNumber2.Size = new System.Drawing.Size(124, 317);
+            this.textNumber2.TabIndex = 3;
+            this.textNumber2.Text = "";
+            this.textNumber2.TextChanged += new System.EventHandler(this.textNumber2_TextChanged);
             // 
-            // label1
+            // labelFIO1
             // 
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 68);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Вставьте сюда ФИО\r\nПример:\r\n\r\nИванов Иван Иванович\r\nПетров Петр Иванович\r\n";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelFIO1.Location = new System.Drawing.Point(12, 9);
+            this.labelFIO1.Name = "labelFIO1";
+            this.labelFIO1.Size = new System.Drawing.Size(185, 95);
+            this.labelFIO1.TabIndex = 4;
+            this.labelFIO1.Text = "Вставьте сюда ФИО\r\n\r\n\r\nПример:\r\n\r\nИванов Иван Иванович\r\nПетров Петр Иванович";
+            this.labelFIO1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // labelNumber2
             // 
-            this.label2.Location = new System.Drawing.Point(200, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(300, 68);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Вставьте сюда номер телефона в соответствии с ФИО\r\nПример:\r\n\r\n+79644044044\r\n+7914" +
-    "8800553";
+            this.labelNumber2.Location = new System.Drawing.Point(203, 9);
+            this.labelNumber2.Name = "labelNumber2";
+            this.labelNumber2.Size = new System.Drawing.Size(124, 95);
+            this.labelNumber2.TabIndex = 5;
+            this.labelNumber2.Text = "Вставьте сюда номер\r\nтелефона\r\nв соответствии с ФИО\r\nПример:\r\n\r\n+7(964)-404-40-4\r" +
+    "\n8964404404";
             // 
-            // Tag
+            // textTag3
             // 
-            this.Tag.Location = new System.Drawing.Point(509, 80);
-            this.Tag.Name = "Tag";
-            this.Tag.Size = new System.Drawing.Size(167, 20);
-            this.Tag.TabIndex = 6;
-            this.Tag.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textTag3.Location = new System.Drawing.Point(506, 107);
+            this.textTag3.Name = "textTag3";
+            this.textTag3.Size = new System.Drawing.Size(167, 20);
+            this.textTag3.TabIndex = 6;
+            this.textTag3.Text = "Абит";
+            this.textTag3.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label3
+            // labelTag3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(506, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(252, 52);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Вставьте сюда примечание к каждому контакту\r\nПример:\r\n\r\nАбитуриентИМИ";
+            this.labelTag3.Location = new System.Drawing.Point(503, 9);
+            this.labelTag3.Name = "labelTag3";
+            this.labelTag3.Size = new System.Drawing.Size(252, 87);
+            this.labelTag3.TabIndex = 7;
+            this.labelTag3.Text = "Вставьте сюда примечание к каждому контакту:\r\n\r\n\r\nПример:\r\n\r\nАбитуриент";
+            // 
+            // labelError4
+            // 
+            this.labelError4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelError4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelError4.Location = new System.Drawing.Point(503, 155);
+            this.labelError4.Name = "labelError4";
+            this.labelError4.Size = new System.Drawing.Size(263, 153);
+            this.labelError4.TabIndex = 8;
+            this.labelError4.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // labelGroup4
+            // 
+            this.labelGroup4.Location = new System.Drawing.Point(333, 9);
+            this.labelGroup4.Name = "labelGroup4";
+            this.labelGroup4.Size = new System.Drawing.Size(167, 95);
+            this.labelGroup4.TabIndex = 10;
+            this.labelGroup4.Text = "Вставьте сюда название группы\r\nв соответствии с ФИО\r\nПример:\r\n\r\nБА-ТЕСТ\r\nМ-ПРИМЕР" +
+    "";
+            this.labelGroup4.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // textGroup4
+            // 
+            this.textGroup4.Location = new System.Drawing.Point(333, 107);
+            this.textGroup4.Name = "textGroup4";
+            this.textGroup4.Size = new System.Drawing.Size(167, 317);
+            this.textGroup4.TabIndex = 11;
+            this.textGroup4.Text = "";
+            this.textGroup4.TextChanged += new System.EventHandler(this.textGroup4_TextChanged);
+            // 
+            // labelCountFIO
+            // 
+            this.labelCountFIO.AutoSize = true;
+            this.labelCountFIO.Location = new System.Drawing.Point(12, 428);
+            this.labelCountFIO.Name = "labelCountFIO";
+            this.labelCountFIO.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelCountFIO.Size = new System.Drawing.Size(79, 13);
+            this.labelCountFIO.TabIndex = 12;
+            this.labelCountFIO.Text = "Кол-во строк: ";
+            // 
+            // labelCountNumber
+            // 
+            this.labelCountNumber.AutoSize = true;
+            this.labelCountNumber.Location = new System.Drawing.Point(203, 428);
+            this.labelCountNumber.Name = "labelCountNumber";
+            this.labelCountNumber.Size = new System.Drawing.Size(79, 13);
+            this.labelCountNumber.TabIndex = 13;
+            this.labelCountNumber.Text = "Кол-во строк: ";
+            // 
+            // labelCountGroup
+            // 
+            this.labelCountGroup.AutoSize = true;
+            this.labelCountGroup.Location = new System.Drawing.Point(333, 428);
+            this.labelCountGroup.Name = "labelCountGroup";
+            this.labelCountGroup.Size = new System.Drawing.Size(79, 13);
+            this.labelCountGroup.TabIndex = 14;
+            this.labelCountGroup.Text = "Кол-во строк: ";
+            // 
+            // labelWarningUnderExport
+            // 
+            this.labelWarningUnderExport.AutoSize = true;
+            this.labelWarningUnderExport.Location = new System.Drawing.Point(533, 428);
+            this.labelWarningUnderExport.Name = "labelWarningUnderExport";
+            this.labelWarningUnderExport.Size = new System.Drawing.Size(211, 13);
+            this.labelWarningUnderExport.TabIndex = 15;
+            this.labelWarningUnderExport.Text = "Кол-ва строк должны совпадать с ФИО";
+            // 
+            // buttonInstruction
+            // 
+            this.buttonInstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonInstruction.Location = new System.Drawing.Point(525, 311);
+            this.buttonInstruction.Name = "buttonInstruction";
+            this.buttonInstruction.Size = new System.Drawing.Size(110, 42);
+            this.buttonInstruction.TabIndex = 16;
+            this.buttonInstruction.Text = "Инструкция";
+            this.buttonInstruction.UseVisualStyleBackColor = true;
+            this.buttonInstruction.Click += new System.EventHandler(this.buttonInstruction_Click);
+            // 
+            // buttonSuggestions
+            // 
+            this.buttonSuggestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSuggestions.Location = new System.Drawing.Point(641, 311);
+            this.buttonSuggestions.Name = "buttonSuggestions";
+            this.buttonSuggestions.Size = new System.Drawing.Size(110, 42);
+            this.buttonSuggestions.TabIndex = 17;
+            this.buttonSuggestions.Text = "Предложения\r\nОтзывы";
+            this.buttonSuggestions.UseVisualStyleBackColor = true;
+            this.buttonSuggestions.Click += new System.EventHandler(this.buttonSuggestions_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.Tag);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Number);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.FIO);
+            this.ClientSize = new System.Drawing.Size(766, 447);
+            this.Controls.Add(this.buttonSuggestions);
+            this.Controls.Add(this.buttonInstruction);
+            this.Controls.Add(this.labelWarningUnderExport);
+            this.Controls.Add(this.labelCountGroup);
+            this.Controls.Add(this.labelCountNumber);
+            this.Controls.Add(this.labelCountFIO);
+            this.Controls.Add(this.textGroup4);
+            this.Controls.Add(this.labelGroup4);
+            this.Controls.Add(this.labelError4);
+            this.Controls.Add(this.labelTag3);
+            this.Controls.Add(this.textTag3);
+            this.Controls.Add(this.labelNumber2);
+            this.Controls.Add(this.labelFIO1);
+            this.Controls.Add(this.textNumber2);
+            this.Controls.Add(this.buttonExport);
+            this.Controls.Add(this.textFIO1);
             this.Name = "Form1";
             this.Text = "САКЭ";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -120,13 +228,22 @@
         }
 
         #endregion
-        private System.Windows.Forms.RichTextBox FIO;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox Number;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Tag;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RichTextBox textFIO1;
+        private System.Windows.Forms.Button buttonExport;
+        private System.Windows.Forms.RichTextBox textNumber2;
+        private System.Windows.Forms.Label labelFIO1;
+        private System.Windows.Forms.Label labelNumber2;
+        private System.Windows.Forms.Label labelTag3;
+        private System.Windows.Forms.Label labelError4;
+        private System.Windows.Forms.TextBox textTag3;
+        private System.Windows.Forms.Label labelGroup4;
+        private System.Windows.Forms.RichTextBox textGroup4;
+        private System.Windows.Forms.Label labelCountFIO;
+        private System.Windows.Forms.Label labelCountNumber;
+        private System.Windows.Forms.Label labelCountGroup;
+        private System.Windows.Forms.Label labelWarningUnderExport;
+        private System.Windows.Forms.Button buttonInstruction;
+        private System.Windows.Forms.Button buttonSuggestions;
     }
 }
 
