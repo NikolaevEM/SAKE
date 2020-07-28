@@ -44,6 +44,7 @@
             this.labelWarningUnderExport = new System.Windows.Forms.Label();
             this.buttonInstruction = new System.Windows.Forms.Button();
             this.buttonSuggestions = new System.Windows.Forms.Button();
+            this.buttonDir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textFIO1
@@ -114,9 +115,9 @@
             // 
             this.labelError4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelError4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelError4.Location = new System.Drawing.Point(503, 155);
+            this.labelError4.Location = new System.Drawing.Point(507, 138);
             this.labelError4.Name = "labelError4";
-            this.labelError4.Size = new System.Drawing.Size(263, 153);
+            this.labelError4.Size = new System.Drawing.Size(248, 180);
             this.labelError4.TabIndex = 8;
             this.labelError4.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
@@ -179,9 +180,9 @@
             // buttonInstruction
             // 
             this.buttonInstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonInstruction.Location = new System.Drawing.Point(525, 311);
+            this.buttonInstruction.Location = new System.Drawing.Point(644, 453);
             this.buttonInstruction.Name = "buttonInstruction";
-            this.buttonInstruction.Size = new System.Drawing.Size(110, 42);
+            this.buttonInstruction.Size = new System.Drawing.Size(110, 25);
             this.buttonInstruction.TabIndex = 16;
             this.buttonInstruction.Text = "Инструкция";
             this.buttonInstruction.UseVisualStyleBackColor = true;
@@ -190,19 +191,30 @@
             // buttonSuggestions
             // 
             this.buttonSuggestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSuggestions.Location = new System.Drawing.Point(641, 311);
+            this.buttonSuggestions.Location = new System.Drawing.Point(12, 453);
             this.buttonSuggestions.Name = "buttonSuggestions";
-            this.buttonSuggestions.Size = new System.Drawing.Size(110, 42);
+            this.buttonSuggestions.Size = new System.Drawing.Size(133, 25);
             this.buttonSuggestions.TabIndex = 17;
-            this.buttonSuggestions.Text = "Предложения\r\nОтзывы";
+            this.buttonSuggestions.Text = "Предложения, отзывы";
             this.buttonSuggestions.UseVisualStyleBackColor = true;
             this.buttonSuggestions.Click += new System.EventHandler(this.buttonSuggestions_Click);
+            // 
+            // buttonDir
+            // 
+            this.buttonDir.Location = new System.Drawing.Point(547, 334);
+            this.buttonDir.Name = "buttonDir";
+            this.buttonDir.Size = new System.Drawing.Size(180, 20);
+            this.buttonDir.TabIndex = 18;
+            this.buttonDir.Text = "Открыть папку с файлом";
+            this.buttonDir.UseVisualStyleBackColor = true;
+            this.buttonDir.Click += new System.EventHandler(this.buttonDir_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(766, 447);
+            this.ClientSize = new System.Drawing.Size(766, 490);
+            this.Controls.Add(this.buttonDir);
             this.Controls.Add(this.buttonSuggestions);
             this.Controls.Add(this.buttonInstruction);
             this.Controls.Add(this.labelWarningUnderExport);
@@ -220,7 +232,7 @@
             this.Controls.Add(this.buttonExport);
             this.Controls.Add(this.textFIO1);
             this.Name = "Form1";
-            this.Text = "САКЭ";
+            this.Text = "САКЭ 1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -244,6 +256,7 @@
         private System.Windows.Forms.Label labelWarningUnderExport;
         private System.Windows.Forms.Button buttonInstruction;
         private System.Windows.Forms.Button buttonSuggestions;
+        private System.Windows.Forms.Button buttonDir;
     }
 }
 

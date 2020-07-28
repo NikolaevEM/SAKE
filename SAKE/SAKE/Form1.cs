@@ -89,7 +89,6 @@ namespace SAKE
             string[] stringGroup = textGroup4.Text.Split('\n');
             string stringTag = textTag3.Text;
             int lenFIO = stringFIO.Length;
-            //FileStream fout = new FileStream("contactsBySAKE.txt", FileMode.Create);
             StreamWriter writer = new StreamWriter("contactsBySAKE.vcf");
 
             for (int i=0; i<lenFIO;i++)
@@ -135,6 +134,11 @@ namespace SAKE
         private void buttonSuggestions_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://forms.gle/RG7wQeKnNQ3VaV6D9");
+        }
+
+        private void buttonDir_Click(object sender, EventArgs e)
+        {
+            ShellExecute(0, 'open', 'EXPLORER', PChar('/select, ' + "contactsBySAKE.vcf"), nil, SW_RESTORE)
         }
     }
 }
